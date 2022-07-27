@@ -70,6 +70,11 @@
     color: var(--text-color);
 }
 
+.searchBox>input:focus {
+    outline: 2px solid var(--primary-clr) !important;
+    border: none;
+}
+
 ::placeholder {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;

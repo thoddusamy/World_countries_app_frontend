@@ -43,6 +43,7 @@
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .detailCountry_col_right__desc {
