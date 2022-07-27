@@ -1,0 +1,100 @@
+.detailCountry {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.detailCountry_col_left {
+    padding: 0 !important;
+    margin-top: 40px !important;
+    max-width: 250px !important;
+    max-height: 320px;
+    background-color: var(--background-clr-primary);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.detailCountry_col_left>img {
+    width: 250px;
+}
+
+.detailCountry_col_left>.detailCountry_desc {
+    padding: 25px;
+}
+
+.detailCountry_col_left>.detailCountry_desc>h5 {
+    margin-bottom: 10px;
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.detailCountry_col_left>.detailCountry_desc:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.detailCountry_col_right {
+    max-width: 600px !important;
+    padding: 0 !important;
+    margin-top: 40px !important;
+    background-color: var(--background-clr-primary);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.detailCountry_col_right__desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.05rem;
+    padding-top: 15px;
+    border-bottom: 1px solid var(--text-color);
+    font-family: 'Play', sans-serif;
+}
+
+.detailCountry_col_right__desc:last-child {
+    border-bottom: none;
+}
+
+.detailCountry_col_right__desc>a {
+    font-family: 'Play', sans-serif;
+    letter-spacing: normal;
+    font-size: .9rem;
+}
+
+.detailCountry_col_right__desc>:nth-child(odd) {
+    color: gray;
+}
+
+.detailCountry_col_right__desc_container {
+    padding: 0 20px 20px 20px;
+}
+
+.detailCountry_col_right>h3 {
+    display: inline-block;
+    background-color: var(--text-color) !important;
+    color: var(--background-clr-primary) !important;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .detailCountry {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detailCountry_col_right__desc>a {
+        font-size: small;
+    }
+}

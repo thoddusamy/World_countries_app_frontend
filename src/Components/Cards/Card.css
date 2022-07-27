@@ -1,0 +1,40 @@
+.card__container {
+    background-color: var(--background-clr-primary);
+    color: var(--text-color);
+    font-family: 'Play', sans-serif;
+    box-shadow: var(--box-shadow);
+    font-weight: bolder;
+    max-width: 200px;
+    max-height: 250px;
+    /* max-height: 270px; */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.card__container>img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card__container>.desc {
+    padding: 10px 20px;
+}
+
+.card__container>.desc>h5 {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.card_column {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 350ms ease-in-out;
+}
+
+.card_column:hover {
+    transform: scale(1.03);
+}

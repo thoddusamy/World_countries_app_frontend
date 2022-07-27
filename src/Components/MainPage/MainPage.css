@@ -1,0 +1,103 @@
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-clr-secondary);
+    color: var(--text-color);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading>h1 {
+    flex: 0.95;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--primary-clr);
+    margin: 1.5rem;
+    letter-spacing: 10px;
+}
+
+.heading>.heading__theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.heading>.heading__theme>span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    letter-spacing: 1.5px;
+}
+
+.heading>div>button {
+    fill: var(--text-color);
+    margin-left: .2rem;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-bg-clr);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.heading>div>button>.themeIcon {
+    color: var(--text-color)
+}
+
+.container__row {
+    padding-bottom: 3rem;
+}
+
+.searchBox {
+    width: 350px;
+    margin-left: 55px;
+}
+
+.searchBox>input {
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    background-color: var(--background-clr-primary);
+}
+
+.searchBox>input[type="text"] {
+    padding-left: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+::placeholder {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.searchBox>button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: -30px;
+}
+
+@media screen and (max-width: 468px) {
+    .searchBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .searchBox>input {
+        width: 80%;
+    }
+
+    ::placeholder {
+        font-size: small;
+        letter-spacing: normal;
+    }
+
+}
