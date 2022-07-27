@@ -78,7 +78,7 @@ const DetailPage = () => {
                                                 <span>{filteredCountry.latlng[1]}</span>
                                             </div>
                                             <div className='detailCountry_col_right__desc'>
-                                                <span>Google Maps</span>
+                                                <span>Location</span>
                                                 <a href={filteredCountry.maps.googleMaps}>{filteredCountry.maps.googleMaps}</a>
                                             </div>
                                             <div className='detailCountry_col_right__desc'>
