@@ -3,25 +3,17 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './DetailPage.css'
 import { config } from '../../config'
+import { useContext } from 'react'
+import { ContextApi } from '../ContextApi'
 
 const DetailPage = () => {
 
     const { code } = useParams()
-    const [countryData, setCountryData] = useState([])
+    const context = useContext(ContextApi)
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const getData = await axios.get(`${config.url}`)
-            setCountryData(getData.data)
-        }
-        fetchData()
-    }, [])
-
-
-    const filterDetailCountry = countryData.filter((detailCountry) =>
+    const filterDetailCountry = context.countryData.filter((detailCountry) =>
         detailCountry.cca3.includes(code)
     )
-    console.log(filterDetailCountry);
 
     let localTheme = localStorage.getItem('theme')
 

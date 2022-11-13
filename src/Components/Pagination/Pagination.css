@@ -1,0 +1,19 @@
+.pagination_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.pagination_container span {
+    margin-right: 10px;
+    border: 1px solid orange;
+    padding: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination_container .active {
+    background-color: orange;
+    color: black;
+}
