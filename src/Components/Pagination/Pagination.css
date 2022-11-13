@@ -7,13 +7,13 @@
 
 .pagination_container span {
     margin-right: 10px;
-    border: 1px solid orange;
+    border: 1px solid var(--primary-clr);
     padding: 0 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .pagination_container .active {
-    background-color: orange;
+    background-color: var(--primary-clr);
     color: black;
 }
