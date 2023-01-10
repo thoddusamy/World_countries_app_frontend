@@ -1,3 +1,3 @@
 export const config = {
-    url: 'https://worlds-countries-app.herokuapp.com/allcountries'
+    url: 'https://world-countries-app.onrender.com/allcountries'
 }
