@@ -93,12 +93,6 @@ function App() {
                     <Card filterCountries={filterCountries} />
                 </div>
             </div>
-//             <Pagination
-//                 totalCountryCount={filterCountries.length}
-//                 cardPerPage={cardPerPage}
-//                 setCurrentPage={setCurrentPage}
-//                 currentPage={currentPage}
-//             />
         </div>
     )
 }
