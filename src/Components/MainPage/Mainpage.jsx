@@ -54,9 +54,9 @@ function App() {
         country.region.toLowerCase().includes(keyword)
     )
 
-    const lastPostIndex = currentPage * cardPerPage
-    const firstPostIndex = lastPostIndex - cardPerPage
-    const currentPost = filterCountries.slice(firstPostIndex, lastPostIndex)
+//     const lastPostIndex = currentPage * cardPerPage
+//     const firstPostIndex = lastPostIndex - cardPerPage
+//     const currentPost = filterCountries.slice(firstPostIndex, lastPostIndex)
 
     return (
         <div className='container-fluid' data-theme={setLocalTheme}>
@@ -90,15 +90,15 @@ function App() {
                     </button>
                 </div>
                 <div className='row container__row'>
-                    <Card filterCountries={currentPost} />
+                    <Card filterCountries={filterCountries} />
                 </div>
             </div>
-            <Pagination
-                totalCountryCount={filterCountries.length}
-                cardPerPage={cardPerPage}
-                setCurrentPage={setCurrentPage}
-                currentPage={currentPage}
-            />
+//             <Pagination
+//                 totalCountryCount={filterCountries.length}
+//                 cardPerPage={cardPerPage}
+//                 setCurrentPage={setCurrentPage}
+//                 currentPage={currentPage}
+//             />
         </div>
     )
 }
